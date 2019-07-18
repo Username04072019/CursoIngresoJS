@@ -1,7 +1,7 @@
 function mostrar()
 {
-  var cont = 0;
-  var clave;  /* clave = "utn750" */
+/*  var cont = 0;
+  var clave;  /* clave = "utn750" * /
   clave = prompt("Ingrese el número clave.");
 
   while (clave != "utn750") {
@@ -12,6 +12,28 @@ function mostrar()
     } else if (clave) {
       cont;
     }
+  }
+Ahora, con do while + "bandera" (decir si fue un error, valor booleano) + corregido: */
+
+  var error = false;
+  var clave;
+  var cont = 0;
+
+  do  {
+    clave = prompt("Ingrese la clave.");
+    cont++;
+    if (cont == 3){
+      error = true;
+      break;
+    } else if (clave) {
+      cont;
+    }
+  } while (clave != "utn750");
+
+  if(error){
+    alert("Error");
+  } else {
+    alert("Éxito");
   }
 
 }//FIN DE LA FUNCIÓN
