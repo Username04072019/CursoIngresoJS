@@ -20,10 +20,10 @@ function mostrar()
   var cont = 0;
   do {
     cont++;
-    alert(cont-1);
+    alert(cont);
 
-    } while (cont <= 10);
+    } while (cont < 10);
 
-
+/* ademas corregido */
 
 }//FIN DE LA FUNCIÓN

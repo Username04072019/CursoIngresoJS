@@ -21,7 +21,8 @@ var cont = 10;
 do {
   --cont;
   alert(cont+1);
-} while (cont >= 0);
+} while (cont > 0);
 
+/* ademas corregido */
 
 }//FIN DE LA FUNCIÓN
